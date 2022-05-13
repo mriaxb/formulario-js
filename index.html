@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h2> Cadastrar </h2>
+        </div>
+
+        <form name="f1" id="form" class="form">
+            <div class="form-control">
+                <label for="username"> Username </label>
+                <input type="text" id="username" name="name" onblur="checkInputs(username)"/>
+                <small> mensagem de erro </small>
+            </div>
+
+            <div class="form-control ">
+                <label for="email"> Email </label>
+                <input type="text" id="email" name="email" onblur="validacaoEmail(f1.email)" maxlength="60" size='65'/>
+                <small> mensagem de erro </small>
+            </div>
+
+            <div class="form-control">
+                <label for="senha"> Senha </label>
+                <input type="password" id="senha" onblur="checkInputs(senha)"/>
+                <small> mensagem de erro </small>
+            </div>
+
+            <div class="form-control">
+                <label for="confirmacao-senha"> Confimação de senha </label>
+                <input type="password" id="confirmacao-senha" onblur="checkInputs(confirmacao-senha)"/>
+                <small> mensagem de erro </small>
+            </div>
+            <button type="submit" id="botao" onclick="apagaForm()"  onclick="processChanges()" disable> Cadastrar </button>
+        </form>
+    </div>
+    <div id="msgemail"></div>
+    <script src="script.js"></script>
+</body>
+</html>

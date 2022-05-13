@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Marcellus+SC&family=Megrim&family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(fundo1.jpg);
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(90deg, rgb(140, 26, 155) 0%, #d43655 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(19, 18, 18);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #00FF00;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.header{
+    font-family: 'Chakra Petch';
+    background-color: rgb(19, 18, 18);
+    color: #000;
+    padding: 20px;
+    text-shadow: 
+    -1px -1px 1px #00FF00, 
+    -1px 1px 1px #00FF00,                    
+    1px -1px 1px #00FF00,                  
+    1px 1px 1px #00FF00;
+     
+}
+.header h2{
+    font-size: 35px;
+    text-align: center;
+}
+.form{
+    color: #fff;
+    font-family: 'inter';
+    font-weight: 500;
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    text-align: center;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.form-control input{
+    background-color: rgb(75, 97, 82);
+    border: 2px solid #000;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    font-size: 14px;
+    background-color: #099c09;
+    border: 2px solid #053d05;
+    color:#d9f3d9;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+/* erro e sucesso */
+
+.form-control.success input{
+    border-color: #00FF00;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
